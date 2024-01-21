@@ -21,7 +21,8 @@ namespace ExcelDataReader.Core
         /// </returns>
         public static bool IsSingleByteEncoding(Encoding encoding)
         {
-            return encoding.GetByteCount(new[] { 'a' }) == 1;
+            char[] chars = new[] { 'a' };
+            return encoding.GetByteCount(chars) == 1;
         }
 
         public static string ConvertEscapeChars(string input)

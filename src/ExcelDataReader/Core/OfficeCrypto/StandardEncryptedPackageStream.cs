@@ -35,7 +35,12 @@ namespace ExcelDataReader.Core.OfficeCrypto
             set => BaseStream.Position = value;
         }
 
-        private Stream BaseStream { get; set; }
+#nullable enable
+
+        // private Stream BaseStream { get; set; }
+        private CryptoStream? BaseStream { get; set; }
+
+#nullable disable
 
         private SymmetricAlgorithm Cipher { get; set; }
 

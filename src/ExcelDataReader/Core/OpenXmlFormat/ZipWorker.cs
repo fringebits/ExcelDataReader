@@ -90,9 +90,14 @@ namespace ExcelDataReader.Core.OpenXmlFormat
 
             static string ResolvePath(string? basePath, string path)
             {
+#pragma warning disable CA1865
                 // Can there be relative paths?
                 if (path.StartsWith("/", StringComparison.Ordinal))
+                {
                     return path.Substring(1);
+                }
+#pragma warning restore CA1865
+
                 return basePath + path;
             }
 
