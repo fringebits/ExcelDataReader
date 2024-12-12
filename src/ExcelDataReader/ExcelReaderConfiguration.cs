@@ -7,6 +7,11 @@ namespace ExcelDataReader
     /// </summary>
     public class ExcelReaderConfiguration
     {
+        static ExcelReaderConfiguration()
+        {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+        }
+
         /// <summary>
         /// Gets or sets a value indicating the encoding to use when the input XLS lacks a CodePage record, 
         /// or when the input CSV lacks a BOM and does not parse as UTF8. Default: cp1252. (XLS BIFF2-5 and CSV only).
