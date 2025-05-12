@@ -7,42 +7,42 @@
     public enum CellError : byte
     {
         /// <summary>
-        /// #NULL!
+        /// NULL!
         /// </summary>
         NULL = 0x00,
 
         /// <summary>
-        /// #DIV/0!
+        /// DIV/0!
         /// </summary>
         DIV0 = 0x07,
 
         /// <summary>
-        /// #VALUE!
+        /// VALUE!
         /// </summary>
         VALUE = 0x0F,
 
         /// <summary>
-        /// #REF!
+        /// REF!
         /// </summary>
         REF = 0x17,
 
         /// <summary>
-        /// #NAME?
+        /// NAME?
         /// </summary>
         NAME = 0x1D,
 
         /// <summary>
-        /// #NUM!
+        /// NUM!
         /// </summary>
         NUM = 0x24,
 
         /// <summary>
-        /// #N/A
+        /// N/A
         /// </summary>
         NA = 0x2A,
 
         /// <summary>
-        /// #GETTING_DATA
+        /// GETTING_DATA
         /// </summary>
 #pragma warning disable CA1707 // Identifiers should not contain underscores
         GETTING_DATA = 0x2B,

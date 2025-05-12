@@ -69,7 +69,7 @@ namespace ExcelDataReader.Core.BinaryFormat
             if (sstIndex < _strings.Count)
                 return _strings[(int)sstIndex].GetValue(encoding);
 
-            return null; // #VALUE error
+            return null; // VALUE error
         }
 
         /// <summary>
